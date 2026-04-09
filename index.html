@@ -4,117 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Souza Araújo</title>
-
-  <!-- Fontes -->
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
 
     body {
-      background-color: #F8F9FA;
-      font-family: 'Inter', sans-serif;
-      color: #343A40;
+      background-color: #0b1d3a;
+      color: white;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      height: 100vh;
     }
 
     .container {
-      width: 100%;
-      max-width: 420px;
-      padding: 24px;
       text-align: center;
-    }
-
-    /* Header */
-    .header {
-      background-color: #1B4332;
-      padding: 32px 24px;
-      border-radius: 16px;
-      margin-bottom: 24px;
+      max-width: 400px;
+      width: 90%;
     }
 
     .profile-img {
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #74C69D;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
+      border: 3px solid white;
     }
 
-    .name {
-      font-family: 'Merriweather', serif;
-      color: white;
-      font-size: 22px;
-      margin-bottom: 8px;
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
     }
 
     .profession {
-      color: #74C69D;
-      font-size: 14px;
+      font-size: 1rem;
+      margin-bottom: 10px;
+      opacity: 0.9;
     }
 
-    /* Links */
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+    .bio {
+      font-size: 0.9rem;
+      margin-bottom: 25px;
+      opacity: 0.8;
     }
 
-    .link-btn {
+    .link {
       display: block;
-      width: 100%;
-      padding: 16px;
       text-decoration: none;
+      color: white;
+      background: #1f3b73;
+      padding: 12px;
+      margin: 10px 0;
       border-radius: 10px;
-      border: 2px solid #2D6A4F;
-      color: #2D6A4F;
+      transition: all 0.3s ease;
       font-weight: 500;
-      transition: 0.3s;
-      background-color: white;
     }
 
-    .link-btn:hover {
-      background-color: #2D6A4F;
-      color: white;
+    .link:hover {
+      background: #2e5bbf;
+      transform: translateY(-3px);
     }
 
   </style>
 </head>
 <body>
-
   <div class="container">
+    <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="profile-img">
 
-    <div class="header">
-      <!-- Substitua pela sua foto -->
-      <img src="https://via.placeholder.com/150" alt="Foto de Alex" class="profile-img">
+    <h1>Alex Souza Araújo</h1>
+    <p class="profession">Estudante de ADS | Futuro Desenvolvedor Full Stack</p>
+    <p class="bio">Apaixonado por tecnologia, desenvolvimento web e torcedor do Fortaleza Esporte Clube.</p>
 
-      <h1 class="name">Alex Souza Araújo</h1>
-      <p class="profession">Estudante de Análise e Desenvolvimento de Sistemas</p>
-    </div>
-
-    <div class="links">
-      <a href="https://www.instagram.com/alexsaraujjo" target="_blank" class="link-btn">
-        Instagram
-      </a>
-
-      <a href="https://www.linkedin.com/in/alex-souza-araújo-130337247/" target="_blank" class="link-btn">
-        LinkedIn
-      </a>
-
-      <a href="https://github.com/alexsaraujjo/" target="_blank" class="link-btn">
-        GitHub
-      </a>
-    </div>
-
+    <a href="https://instagram.com/alexsaraujjo" target="_blank" class="link">Instagram</a>
+    <a href="https://www.linkedin.com/in/alex-souza-araújo-130337247/" target="_blank" class="link">LinkedIn</a>
+    <a href="https://github.com/alexsaraujjo" target="_blank" class="link">GitHub</a>
   </div>
-
 </body>
 </html>
